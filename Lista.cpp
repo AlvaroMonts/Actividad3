@@ -59,14 +59,27 @@ void Lista::insertar(int x) {
 bool Lista::ejercicioConsulta() {
 	bool resul = false;
 	// COMPLETAR
+	if (!estaVacia()) {
+		NodoLista nodo;
+		int nodosPares = 0;
+		int nodosImpares = 0;
+		if (inicio->clave % 2 == 0) {
+			nodosPares++;
+		} else {
+			nodosImpares++;
+		}
+
+		resul = true;
+	}
 	return resul;
 }
 
 void Lista::ejercicioInsercion() {
-	// COMPLETAR
+// COMPLETAR
 }
 int Lista::ejercicioEliminacion() {
 	int resul = false;
-	// COMPLETAR
+// COMPLETAR
+
 	return resul;
 }

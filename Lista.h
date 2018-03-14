@@ -16,11 +16,11 @@ public:
 	int clave;
 	NodoLista *sig;
 
-	NodoLista () {
+	NodoLista() {
 		clave = 0;
 		sig = NULL;
 	}
-	NodoLista (int elemento, NodoLista *n) {
+	NodoLista(int elemento, NodoLista *n) {
 		clave = elemento;
 		sig = n;
 	}
@@ -31,8 +31,6 @@ public:
 #ifndef LISTA_H_
 #define LISTA_H_
 
-
-
 typedef NodoLista *pNodo;
 class Lista {
 	//Variables miembro
@@ -40,16 +38,16 @@ private:
 	pNodo inicio;
 public:
 	// Interfaz/Prototipo
-	Lista ();
-	~Lista ();
+	Lista();
+	~Lista();
 
-	bool estaVacia ();
-	void insertarAlPrincipio (int x);
-	void escribirLista ();
-	void insertar (int x);
-	bool ejercicioConsulta ();
-	void ejercicioInsercion ();
-	int ejercicioEliminacion ();
+	bool estaVacia();
+	void insertarAlPrincipio(int x);
+	void escribirLista();
+	void insertar(int x);
+	bool ejercicioConsulta();
+	void ejercicioInsercion();
+	int ejercicioEliminacion();
 };
 
 #endif /* LISTA_H_ */
