@@ -7,11 +7,43 @@
 #include "Lista.h"
 
 void juegoEnsayo1(Lista &lista) {
-	// COMPLETAR
+	// caso 1
+/*
+	lista.insertarAlPrincipio(3);
+	lista.insertarAlPrincipio(8);
+	lista.insertarAlPrincipio(4);
+	lista.insertarAlPrincipio(2);
+	lista.insertarAlPrincipio(1);
+
+	// caso 2
+*/
+	 lista.insertarAlPrincipio(5);
+	 lista.insertarAlPrincipio(2);
+	 lista.insertarAlPrincipio(4);
+	 lista.insertarAlPrincipio(7);
+
 }
 
 void juegoEnsayo2(Lista &lista) {
 	// COMPLETAR
+	// caso 1
+
+	lista.insertarAlPrincipio(6);
+	lista.insertarAlPrincipio(9);
+	lista.insertarAlPrincipio(15);
+	lista.insertarAlPrincipio(8);
+	lista.insertarAlPrincipio(3);
+	// caso 2
+/*
+	lista.insertarAlPrincipio(6);
+	lista.insertarAlPrincipio(4);
+	lista.insertarAlPrincipio(15);
+	lista.insertarAlPrincipio(8);
+	lista.insertarAlPrincipio(3);
+*/
+	 // caso 3 nada de codigo dentro
+
+
 }
 
 void juegoEnsayo3(Lista &lista) {

@@ -60,26 +60,56 @@ bool Lista::ejercicioConsulta() {
 	bool resul = false;
 	// COMPLETAR
 	if (!estaVacia()) {
-		NodoLista nodo;
 		int nodosPares = 0;
 		int nodosImpares = 0;
-		if (inicio->clave % 2 == 0) {
-			nodosPares++;
-		} else {
-			nodosImpares++;
+		pNodo aux = inicio;
+		while (aux != NULL) {
+			if (aux->clave % 2 == 0)
+				nodosPares++;
+			else
+				nodosImpares++;
+			aux = aux->sig;
 		}
 
-		resul = true;
+//		cout << "nodospares" << nodosPares << "\n";
+//		cout << "nodosimpares:" << nodosImpares << "\n";
+		if (nodosPares == nodosImpares)
+			resul = true;
 	}
 	return resul;
 }
 
 void Lista::ejercicioInsercion() {
 // COMPLETAR
+	// intentar que pille el ultimo
+	int resul = 0;
+	if (!estaVacia()) {
+		pNodo aux = inicio;
+		bool ultimo = false;
+		while (aux != NULL) {
+			int clave = aux->clave;
+			if (clave % 2 == 0) {
+				resul += clave;
+			} else {
+				resul -= clave;
+			}
+			if (aux->sig == NULL) {
+				ultimo = true;
+			}
+			if (!ultimo) {
+				aux = aux->sig;
+			} else {
+				aux->sig = new NodoLista(resul, NULL);
+				break;
+			}
+		}
+	} else {
+		insertar(resul);
+	}
 }
 int Lista::ejercicioEliminacion() {
 	int resul = false;
-// COMPLETAR
+	// COMPLETAR
 
 	return resul;
 }
